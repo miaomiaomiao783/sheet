@@ -1,0 +1,71 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-f1e51ce8d094
+Exec   : blockMesh
+Date   : Apr 25 2020
+Time   : 16:55:49
+Host   : "dyfluid"
+PID    : 4011
+I/O    : uncollated
+Case   : /home/dyfluid/OpenFOAM/dyfluid-7/run/originsheettestfin
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "/home/dyfluid/OpenFOAM/dyfluid-7/run/originsheettestfin/system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 0.001
+    Block 0 cell size :
+        i : 1e-05 .. 1e-05
+        j : 1e-05 .. 1e-05
+        k : 2.5e-05
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (0.001 0.001 2.5e-05)
+  nPoints: 20402
+  nCells: 10000
+  nFaces: 40200
+  nInternalFaces: 19800
+----------------
+Patches
+----------------
+  patch 0 (start: 19800 size: 400) name: fixedWalls
+  patch 1 (start: 20200 size: 10000) name: top
+  patch 2 (start: 30200 size: 10000) name: down
+
+End
+

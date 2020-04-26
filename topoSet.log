@@ -1,0 +1,56 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-f1e51ce8d094
+Exec   : topoSet
+Date   : Apr 25 2020
+Time   : 16:55:49
+Host   : "dyfluid"
+PID    : 4012
+I/O    : uncollated
+Case   : /home/dyfluid/OpenFOAM/dyfluid-7/run/originsheettestfin
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading topoSetDict
+
+Time = 0
+    mesh not changed.
+Created faceSet top
+    Applying source patchToFace
+    Adding all faces of patch top ...
+    Found matching patch top with 10000 faces.
+    faceSet top now size 10000
+Created faceSet tao1
+    Applying source cylinderAnnulusToFace
+    Adding faces with centre within cylinder annulus, with p1 = (0.0005 0.0005 2.6e-05), p2 = (0.0005 0.0005 2.4e-05) and outer radius = 0.0004 and inner radius = 0.0003
+    faceSet tao1 now size 2196
+Created faceSet tao2
+    Applying source faceToFace
+    Adding all faces from faceSet top ...
+    faceSet tao2 now size 10000
+Read set faceSet tao2 with size 10000
+    Applying source faceToFace
+    Removing all faces from faceSet tao1 ...
+    faceSet tao2 now size 7804
+Created faceSet tao3
+    Applying source faceToFace
+    Adding all faces from faceSet top ...
+    faceSet tao3 now size 10000
+Read set faceSet tao3 with size 10000
+    Applying source faceToFace
+    Removing all faces from faceSet tao2 ...
+    faceSet tao3 now size 2196
+End
+

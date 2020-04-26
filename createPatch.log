@@ -1,0 +1,53 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  7
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 7-f1e51ce8d094
+Exec   : createPatch -overwrite
+Date   : Apr 25 2020
+Time   : 16:55:49
+Host   : "dyfluid"
+PID    : 4013
+I/O    : uncollated
+Case   : /home/dyfluid/OpenFOAM/dyfluid-7/run/originsheettestfin
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading createPatchDict
+
+Adding new patch tao2 as patch 3 from 
+{
+    type            patch;
+}
+
+Adding new patch tao3 as patch 4 from 
+{
+    type            patch;
+}
+
+
+Read 7804 faces from faceSet tao2
+Read 2196 faces from faceSet tao3
+
+Doing topology modification to order faces.
+
+Not synchronising points.
+
+Removing patches with no faces in them.
+
+Removing zero-sized patch top type wall at position 1
+Removing patches.
+Writing repatched mesh to 0
+
+End
+
